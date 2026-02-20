@@ -30,7 +30,7 @@ NodeControl — это мобильное приложение на React Native
 1.  **Клонируйте репозиторий:**
 
     ```bash
-    git clone https://github.com/ваш-логин/NodeControl.git
+    git clone https://github.com/JuSt7483/NodeControl.git
     cd NodeControl
     ```
 
