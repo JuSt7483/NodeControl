@@ -1,53 +1,29 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+// Определяем, какие свойства будут в каждой теме
+export interface Theme {
+  background: string;
+  card: string;
+  text: string;
+  textSecondary: string;
+  primary: string;
+  border: string;
+}
 
-import { Platform } from 'react-native';
-
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
+// Светлая тема (вдохновленная GitHub Light)
+export const lightTheme: Theme = {
+  background: "#f6f8fa", // Светло-серый фон
+  card: "#ffffff", // Белые карточки
+  text: "#24292e", // Темно-серый текст
+  textSecondary: "#586069", // Серый второстепенный текст
+  primary: "#0366d6", // Синий для акцентов
+  border: "#e1e4e8", // Светло-серый для границ
 };
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-});
+// Темная тема (вдохновленная GitHub Dark)
+export const darkTheme: Theme = {
+  background: "#0d1117", // Очень темный фон
+  card: "#161b22", // Чуть более светлые карточки
+  text: "#c9d1d9", // Светло-серый текст
+  textSecondary: "#8b949e", // Более темный второстепенный текст
+  primary: "#58a6ff", // Светло-синий для акцентов
+  border: "#30363d", // Темно-серый для границ
+};
