@@ -12,8 +12,10 @@ NodeControl — это мобильное приложение на React Native
 
 ## 🎬 Демонстрация
 
-![Скриншот списка устройств](assets/images/screenshot-list.PNG)
-![Скриншот экрана управления](assets/images/screenshot-control.PNG)
+<p align="center">
+  <img src="assets/images/screenshot-list.PNG" alt="Скриншот списка устройств" width="300"/>
+  <img src="assets/images/screenshot-control.PNG" alt="Скриншот экрана управления" width="300"/>
+</p>
 
 ## 🛠️ Начало работы
 
